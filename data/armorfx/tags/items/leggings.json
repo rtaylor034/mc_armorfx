@@ -1,0 +1,11 @@
+{
+    "replace": false,
+    "values": [
+        "leather_leggings",
+        "chainmail_leggings",
+        "golden_leggings",
+        "iron_leggings",
+        "diamond_leggings",
+        "netherite_leggings"
+    ]
+}
