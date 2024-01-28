@@ -1,4 +1,4 @@
-#>namespace:internal/load
+#>armorfx:internal/load
 #--------------------
 # @LOAD
 #--------------------
