@@ -11,7 +11,7 @@
 # DEFAULT: 
 #-------------------
 data modify storage armorfx:settings armor.sets set value []
-data modify storage armorfx:settings armor.sets append value {parts:{boots:"leather_boots",leggings:"leather_leggings",chestplate:"leather_chestplate",helmet:"leather_helmet"}, attributes:[{name:"generic.movement_speed", unit:.025,operation:"multiply_base"}]}
+data modify storage armorfx:settings armor.sets append value {parts:{boots:"minecraft:leather_boots",leggings:"minecraft:leather_leggings",chestplate:"minecraft:leather_chestplate",helmet:"minecraft:leather_helmet"}, attributes:[{name:"generic.movement_speed", unit:.025,operation:"multiply_base"}]}
 #>-------------------
 
 #>-------------------

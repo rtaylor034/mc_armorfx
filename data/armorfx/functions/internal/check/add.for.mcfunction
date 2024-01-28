@@ -14,7 +14,7 @@ function armorfx:internal/check/add.for.1 with storage armorfx:var check.add.mac
 
 data modify storage armorfx:var check.add.mod_entry.name set from storage armorfx:var check.add.armor_set.attributes[-1].name
 data modify storage armorfx:var check.add.mod_entry.guuid set from storage gssen:out guuid.result
-data modify storage armorfx:var check.armor_entry.modifiers append from storage armorfx:var check.add.mod_entry
+$data modify storage armorfx:var check.armor_entry.$(part).modifiers append from storage armorfx:var check.add.mod_entry
 
 data remove storage armorfx:var check.add.armor_set.attributes[-1]
 execute if data storage armorfx:var check.add.armor_set.attributes[] run function armorfx:internal/check/add.for with storage armorfx:var check.add
