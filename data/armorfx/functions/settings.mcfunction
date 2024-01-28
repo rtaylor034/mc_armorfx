@@ -25,3 +25,5 @@ data modify storage armorfx:settings armor.sets append value {parts:{boots:"leat
 #-------------------
 data modify storage armorfx:settings armor.part_multipliers set value {chestplate:8, leggings: 7, boots: 4, helmet: 5}
 #>-------------------
+
+function armorfx:internal/cache/generate
