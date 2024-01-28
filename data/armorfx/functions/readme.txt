@@ -22,5 +22,8 @@ Parts<T>: {
 
 StateInfo: {
     id: string
-    modifiers[]: guuid
+    modifiers[]: {
+        name: string
+        guuid: guuid
+    }
 }

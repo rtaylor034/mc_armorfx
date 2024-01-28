@@ -6,12 +6,12 @@
 #-------------------
 #~ defines attributes for sets of armor
 #-------------------
-# ...
+# - 'operation' is the operation-text in the 'attribute' command (add|multiply|multiply_base)
 #-------------------
 # DEFAULT: 
 #-------------------
 data modify storage armorfx:settings armor.sets set value []
-data modify storage armorfx:settings armor.sets append value {parts:{boots:"leather_boots",leggings:"leather_leggings",chestplate:"leather_chestplate",helmet:"leather_helmet"}, attributes:[{name:"generic.movement_speed", unit:.025,operation:1}]}
+data modify storage armorfx:settings armor.sets append value {parts:{boots:"leather_boots",leggings:"leather_leggings",chestplate:"leather_chestplate",helmet:"leather_helmet"}, attributes:[{name:"generic.movement_speed", unit:.025,operation:"multiply_base"}]}
 #>-------------------
 
 #>-------------------
