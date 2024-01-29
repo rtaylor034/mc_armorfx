@@ -1,0 +1,24 @@
+{
+    "criteria": {
+      "ok": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "flags": {
+                  "is_sneaking": true
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "armorfx:internal/cores/events/sneak"
+    }
+  }
+  
