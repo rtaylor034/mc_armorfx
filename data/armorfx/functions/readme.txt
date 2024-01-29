@@ -27,3 +27,7 @@ StateInfo: {
         guuid: guuid
     }
 }
+
+
+BUGS
+- if keepinventory is on, armor stays on but player modifiers are reset.
