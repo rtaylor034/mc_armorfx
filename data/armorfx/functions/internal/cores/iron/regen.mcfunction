@@ -3,7 +3,7 @@
 # ./hurt
 #--------------------
 
-effect give @s regeneration 4 1 false
+effect give @s regeneration 4 2 false
 
 particle instant_effect ~ ~1 ~ 0.2 0.5 0.2 1 15 force
 playsound entity.zombie.attack_iron_door player @a ~ ~ ~ 0.3 0.6

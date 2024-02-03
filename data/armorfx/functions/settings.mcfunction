@@ -39,7 +39,7 @@ data modify storage armorfx:settings armor.part_multipliers set value {chestplat
 #-------------------
 # DEFAULT: 
 #-------------------
-data modify storage armorfx:settings iron.max_hurt_interval set value 60
+data modify storage armorfx:settings iron.max_hurt_interval set value 80
 #>-------------------
 
 function armorfx:internal/cache/generate
