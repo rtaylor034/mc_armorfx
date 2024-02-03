@@ -12,9 +12,9 @@
 #-------------------
 data modify storage armorfx:settings armor.sets set value []
 data modify storage armorfx:settings armor.sets append value {parts:{boots:"minecraft:leather_boots",leggings:"minecraft:leather_leggings",chestplate:"minecraft:leather_chestplate",helmet:"minecraft:leather_helmet"}, attributes:[{name:"generic.movement_speed", unit:.025,operation:"multiply_base"}]}
-data modify storage armorfx:settings armor.sets append value {parts:{boots:"minecraft:golden_boots",leggings:"minecraft:golden_leggings",chestplate:"minecraft:golden_chestplate",helmet:"minecraft:golden_helmet"}, attributes:[{name:"player.block_interaction_range", unit:.11,operation:"add"},{name:"player.entity_interaction_range", unit:.12,operation:"add"}]}
+data modify storage armorfx:settings armor.sets append value {parts:{boots:"minecraft:golden_boots",leggings:"minecraft:golden_leggings",chestplate:"minecraft:golden_chestplate",helmet:"minecraft:golden_helmet"}, attributes:[{name:"player.block_interaction_range", unit:.12,operation:"add"},{name:"player.entity_interaction_range", unit:.14,operation:"add"}]}
 data modify storage armorfx:settings armor.sets append value {parts:{boots:"minecraft:chainmail_boots",leggings:"minecraft:chainmail_leggings",chestplate:"minecraft:chainmail_chestplate",helmet:"minecraft:chainmail_helmet"}, attributes:[{name:"generic.attack_speed", unit:.05,operation:"multiply_base"}]}
-data modify storage armorfx:settings armor.sets append value {parts:{boots:"minecraft:iron_boots",leggings:"minecraft:iron_leggings",chestplate:"minecraft:iron_chestplate",helmet:"minecraft:iron_helmet"}, attributes:[{name:"generic.knockback_resistance", unit:.034,operation:"add"}]}
+data modify storage armorfx:settings armor.sets append value {parts:{boots:"minecraft:iron_boots",leggings:"minecraft:iron_leggings",chestplate:"minecraft:iron_chestplate",helmet:"minecraft:iron_helmet"}, attributes:[{name:"generic.knockback_resistance", unit:.042,operation:"add"}]}
 data modify storage armorfx:settings armor.sets append value {parts:{boots:"minecraft:netherite_boots",leggings:"minecraft:netherite_leggings",chestplate:"minecraft:netherite_chestplate",helmet:"minecraft:netherite_helmet"}, attributes:[{name:"generic.attack_damage", unit:.015,operation:"multiply_base"},{name:"generic.attack_speed", unit:-.035,operation:"multiply"}]}
 #>-------------------
 
@@ -28,6 +28,18 @@ data modify storage armorfx:settings armor.sets append value {parts:{boots:"mine
 # DEFAULT: 
 #-------------------
 data modify storage armorfx:settings armor.part_multipliers set value {chestplate:8, leggings: 7, boots: 4, helmet: 5}
+#>-------------------
+
+#>-------------------
+#> iron.saturate_cooldown
+#-------------------
+#~ defines attributes for sets of armor
+#-------------------
+# ...
+#-------------------
+# DEFAULT: 
+#-------------------
+data modify storage armorfx:settings iron.max_hurt_interval set value 60
 #>-------------------
 
 function armorfx:internal/cache/generate

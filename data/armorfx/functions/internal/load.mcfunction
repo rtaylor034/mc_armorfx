@@ -14,3 +14,6 @@ function armorfx:settings
 scoreboard objectives add armorfx_dirty dummy
 scoreboard objectives add armorfx_var dummy
 
+scoreboard objectives add _armorfx-iron_timer dummy
+scoreboard objectives add _armorfx-iron_stacks dummy
+
