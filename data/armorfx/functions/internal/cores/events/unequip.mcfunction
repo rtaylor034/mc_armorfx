@@ -1,14 +1,14 @@
-#> armorfx:internal/cores/events/equip
+#> armorfx:internal/cores/events/unequip
 #--------------------
-# internal/check/add
+# internal/check/remove
 #--------------------
 
 $data merge storage armorfx:var {cores:{item:"$(item)", part:"$(part)"}}
 
 execute unless data storage armorfx:var cores{part:"chestplate"} run return run data remove storage armorfx:var cores
 
-say equip
+say unequip
 
-execute if data storage armorfx:var cores{item:"minecraft:iron_chestplate"} run return run function armorfx:internal/cores/iron/equip
+execute if data storage armorfx:var cores{item:"minecraft:iron_chestplate"} run return run function armorfx:internal/cores/iron/unequip
 
 data remove storage armorfx:var cores
