@@ -1,6 +1,6 @@
 #> armorfx:internal/cores/events/unground
 #--------------------
-# @ADVANCEMENT : internal/ground
+# @advancement : internal/ground
 #--------------------
 
 advancement revoke @s only armorfx:internal/ground

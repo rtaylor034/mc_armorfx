@@ -3,6 +3,14 @@
 
 $data modify storage armorfx:var check.armor_entry set from storage pdata:data players[{UUID:$(UUID)}].storage.armorfx.internal.armor
 
+data modify storage gssen:in difference.in.a set from storage armorfx:var check.added
+data modify storage gssen:in difference.in.b set from storage armorfx:var check.removed
+data modify storage gssen:in difference.in.compare.only set value ["Slot","id"]
+function gssen:api/array/set/difference with storage gssen:in difference
+
+data modify storage armorfx:var check.added set from storage gssen:out difference.unique_a
+data modify storage armorfx:var check.removed set from storage gssen:out difference.unique_b
+
 #hardcoded for "performance"!
 execute store result score *check.check armorfx_var if data storage armorfx:var check.removed[{Slot:100b}]
 execute if score *check.check armorfx_var matches 1.. run function armorfx:internal/check/remove {part:"boots"}
