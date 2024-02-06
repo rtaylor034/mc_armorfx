@@ -31,7 +31,7 @@ data modify storage armorfx:settings armor.part_multipliers set value {chestplat
 #>-------------------
 
 #>-------------------
-#> iron.saturate_cooldown
+#> iron.partial_cooldown
 #-------------------
 #~ defines attributes for sets of armor
 #-------------------
@@ -39,7 +39,19 @@ data modify storage armorfx:settings armor.part_multipliers set value {chestplat
 #-------------------
 # DEFAULT: 
 #-------------------
-data modify storage armorfx:settings iron.max_hurt_interval set value 80
+data modify storage armorfx:settings iron.partial_cooldown set value 60
+#>-------------------
+
+#>-------------------
+#> iron.full_cooldown
+#-------------------
+#~ defines attributes for sets of armor
+#-------------------
+# ...
+#-------------------
+# DEFAULT: 
+#-------------------
+data modify storage armorfx:settings iron.full_cooldown set value 100
 #>-------------------
 
 function armorfx:internal/cache/generate
