@@ -14,7 +14,7 @@ execute if data storage armorfx:var cores.this_player{HurtTime:9s} run function 
 execute if data storage armorfx:var cores.item{id:"minecraft:golden_chestplate"} run return run function armorfx:internal/cores/golden/main
 execute if data storage armorfx:var cores.item{id:"minecraft:leather_chestplate"} run return run function armorfx:internal/cores/leather/main
 execute if data storage armorfx:var cores.item{id:"minecraft:diamond_chestplate"} run return run function armorfx:internal/cores/diamond/main
-execute if data storage armorfx:var cores.item{id:"minecraft:iron_chestplate"} run return run function armorfx:internal/cores/iron/main
+#execute if data storage armorfx:var cores.item{id:"minecraft:iron_chestplate"} run return run function armorfx:internal/cores/iron/main
 execute if data storage armorfx:var cores.item{id:"minecraft:netherite_chestplate"} run return run function armorfx:internal/cores/netherite/main
 execute if data storage armorfx:var cores.item{id:"minecraft:chainmail_chestplate"} run return run function armorfx:internal/cores/chainmail/main
 
