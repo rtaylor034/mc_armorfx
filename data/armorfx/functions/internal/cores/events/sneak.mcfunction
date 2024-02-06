@@ -1,6 +1,6 @@
 #> armorfx:internal/cores/events/sneak
 #--------------------
-# @ADVANCEMENT : internal/sneak
+# @advancement : internal/sneak
 #--------------------
 
 advancement revoke @s only armorfx:internal/unsneak

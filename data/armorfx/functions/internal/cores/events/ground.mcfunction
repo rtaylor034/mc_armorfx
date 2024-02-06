@@ -1,6 +1,6 @@
 #> armorfx:internal/cores/events/ground
 #--------------------
-# @ADVANCEMENT : internal/ground
+# @advancement : internal/ground
 #--------------------
 
 tag @s add _armorfx.ground_reset
