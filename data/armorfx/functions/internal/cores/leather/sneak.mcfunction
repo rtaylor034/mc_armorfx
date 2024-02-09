@@ -12,7 +12,7 @@ execute store result score $y delta.api.launch run data get entity @s Motion[1] 
 scoreboard players add $y delta.api.launch 8000
 function delta:api/launch_xyz
 
-playsound entity.generic.wind_burst player @a ~ ~ ~ 0.3 0.8
+playsound entity.breeze.wind_burst player @a ~ ~ ~ 0.3 0.8
 playsound ui.toast.in player @a ~ ~ ~ 1 1.5
 particle cloud ~ ~ ~ 0.3 0.1 0.3 0.05 10
 
