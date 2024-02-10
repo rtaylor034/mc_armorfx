@@ -1,6 +1,8 @@
 #>armorfx:settings
 
 #declare storage armorfx:settings
+data modify storage armorfx:settings PERSIST set value false
+
 #>-------------------
 #> armor.sets
 #-------------------

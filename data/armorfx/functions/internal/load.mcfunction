@@ -3,7 +3,7 @@
 # @LOAD
 #--------------------
 #settings
-function armorfx:settings
+execute unless data storage armorfx:settings {PERSIST:true} run function armorfx:settings
 
 #declare storage armorfx:var
 #declare storage armorfx:dirty
