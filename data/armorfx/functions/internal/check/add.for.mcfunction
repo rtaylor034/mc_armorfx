@@ -6,8 +6,8 @@ data modify storage armorfx:var check.add.macro set from storage armorfx:var che
 $data modify storage armorfx:var check.add.macro.value set from storage armorfx:var check.add.macro.$(part)
 
 function gssen:api/inline/gen_uuid
-data modify storage gssen:in guuid.in.UUID set from storage gssen:out gen_uuid.result
-function gssen:api/meta/guuid with storage gssen:in guuid
+data modify storage gssen:in guuid.UUID set from storage gssen:out gen_uuid.result
+function gssen:api/meta/guuid
 data modify storage armorfx:var check.add.macro.guuid set from storage gssen:out guuid.result
 
 function armorfx:internal/check/add.for.1 with storage armorfx:var check.add.macro
