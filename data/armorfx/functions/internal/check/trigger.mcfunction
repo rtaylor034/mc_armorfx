@@ -15,5 +15,6 @@ data modify storage armorfx:var check.removed append from storage armorfx:var ch
 data modify storage armorfx:var check.removed append from storage armorfx:var check.invtr.removed[{Slot:102b}]
 data modify storage armorfx:var check.removed append from storage armorfx:var check.invtr.removed[{Slot:103b}]
 
-function armorfx:internal/check/trigger.1 with entity @s
+execute store result storage armorfx:var check.macro.player_index int 1 run scoreboard players get @s pdata-index
+function armorfx:internal/check/trigger.1 with storage armorfx:var check.macro
 data remove storage armorfx:var check

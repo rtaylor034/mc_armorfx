@@ -1,7 +1,7 @@
 #> armorfx:internal/check/trigger.1
 
 
-$data modify storage armorfx:var check.armor_entry set from storage pdata:data players[{UUID:$(UUID)}].storage.armorfx.internal.armor
+$data modify storage armorfx:var check.armor_entry set from storage pdata:data players[$(player_index)].storage.armorfx.internal.armor
 
 data modify storage gssen:in difference.a set from storage armorfx:var check.added
 data modify storage gssen:in difference.b set from storage armorfx:var check.removed
@@ -47,6 +47,6 @@ execute store result score *check.check armorfx_var run data modify storage armo
 data merge storage armorfx:var {check:{add:{part:"helmet"}}}
 execute if score *check.check armorfx_var matches 1.. run function armorfx:internal/check/add with storage armorfx:var check.add
 
-$data modify storage pdata:data players[{UUID:$(UUID)}].storage.armorfx.internal.armor set from storage armorfx:var check.armor_entry
+$data modify storage pdata:data players[$(player_index)].storage.armorfx.internal.armor set from storage armorfx:var check.armor_entry
 
 scoreboard players reset *check.check armorfx_var
