@@ -1,0 +1,29 @@
+{
+    "criteria": {
+      "hurt": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "damage": {
+            "dealt": {
+              "min": 2,
+              "max": 1000
+            },
+            "blocked": false,
+            "type": {
+              "tags": [
+                {
+                  "id": "armorfx:triggers_chain",
+                  "expected": true
+                }
+              ]
+            }
+          },
+          "entity": []
+        }
+      }
+    },
+    "rewards": {
+      "function": "armorfx:internal/cores/events/attack"
+    }
+  }
+  
