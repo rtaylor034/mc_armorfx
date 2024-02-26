@@ -13,7 +13,7 @@ data modify storage armorfx:settings PERSIST set value false
 # DEFAULT: 
 #-------------------
 data modify storage armorfx:settings armor.sets set value []
-data modify storage armorfx:settings armor.sets append value {parts:{boots:"minecraft:leather_boots",leggings:"minecraft:leather_leggings",chestplate:"minecraft:leather_chestplate",helmet:"minecraft:leather_helmet"}, attributes:[{name:"generic.movement_speed", unit:.025,operation:"multiply_base"}]}
+data modify storage armorfx:settings armor.sets append value {parts:{boots:"minecraft:leather_boots",leggings:"minecraft:leather_leggings",chestplate:"minecraft:leather_chestplate",helmet:"minecraft:leather_helmet"}, attributes:[{name:"generic.movement_speed", unit:.025,operation:"multiply_base"},{name:"generic.safe_fall_distance", unit:.18,operation:"add"}]}
 data modify storage armorfx:settings armor.sets append value {parts:{boots:"minecraft:golden_boots",leggings:"minecraft:golden_leggings",chestplate:"minecraft:golden_chestplate",helmet:"minecraft:golden_helmet"}, attributes:[{name:"player.block_interaction_range", unit:.12,operation:"add"},{name:"player.entity_interaction_range", unit:.14,operation:"add"}]}
 data modify storage armorfx:settings armor.sets append value {parts:{boots:"minecraft:chainmail_boots",leggings:"minecraft:chainmail_leggings",chestplate:"minecraft:chainmail_chestplate",helmet:"minecraft:chainmail_helmet"}, attributes:[{name:"generic.attack_speed", unit:.05,operation:"multiply_base"}]}
 data modify storage armorfx:settings armor.sets append value {parts:{boots:"minecraft:iron_boots",leggings:"minecraft:iron_leggings",chestplate:"minecraft:iron_chestplate",helmet:"minecraft:iron_helmet"}, attributes:[{name:"generic.knockback_resistance", unit:.042,operation:"add"}]}
