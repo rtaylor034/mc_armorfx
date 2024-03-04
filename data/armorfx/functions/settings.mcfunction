@@ -56,4 +56,16 @@ data modify storage armorfx:settings iron.partial_cooldown set value 60
 data modify storage armorfx:settings iron.full_cooldown set value 100
 #>-------------------
 
+#>-------------------
+#> chain.max_interval
+#-------------------
+#~ defines attributes for sets of armor
+#-------------------
+# ...
+#-------------------
+# DEFAULT: 
+#-------------------
+data modify storage armorfx:settings chain.max_interval set value 20
+#>-------------------
+
 function armorfx:internal/cache/generate
