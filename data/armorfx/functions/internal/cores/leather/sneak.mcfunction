@@ -1,6 +1,8 @@
+#[UNUSED]
+
 #> armorfx:internal/cores/leather/sneak
 #--------------------
-# ../events/sneak
+# ../events/sneak [UNUSED]
 #--------------------
 
 execute unless entity @s[tag=_armorfx.ground_reset,nbt={OnGround:0b}] run return 0

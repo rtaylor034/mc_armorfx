@@ -5,10 +5,9 @@
 
 $data modify storage armorfx:var cache.this_set set from storage armorfx:settings armor.sets[$(i)]
 
-data modify storage gssen:in repeat.in.function set value "armorfx:internal/cache/att_iter"
-execute store result storage gssen:in repeat.in.n int 1 if data storage armorfx:var cache.this_set.attributes[]
-
-function gssen:api/inline/repeat with storage gssen:in repeat
+data modify storage gssen:in repeat.function set value "armorfx:internal/cache/att_iter"
+execute store result storage gssen:in repeat.n int 1 if data storage armorfx:var cache.this_set.attributes[]
+function gssen:api/inline/repeat
 
 data remove storage armorfx:var cache
 scoreboard players reset *cache.mult armorfx_var

@@ -1,9 +1,0 @@
-{
-    "replace": false,
-    "values": [
-        "#minecraft:is_projectile",
-        "minecraft:magic",
-        "minecraft:indirect_magic",
-        "minecraft:thorns"
-    ]
-}
